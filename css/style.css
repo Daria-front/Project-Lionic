@@ -16,7 +16,7 @@ img {
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .btn {
@@ -24,10 +24,14 @@ html {
     background-color: #3172b9;
     color: white;
     font-size: 12px;
+    font-weight: 600;
     text-transform: uppercase;
-    padding: 15px 16px;
+    padding: 15px 30px;
     border-radius: 4px; 
     cursor: pointer;
+}
+.btn.btn-big {
+    padding: 20px 60px;
 }
 
 /*Header*/
@@ -46,23 +50,40 @@ html {
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 100%;
 }
 
-.logo {
-    margin-right: auto;
-}
+
 .nav-list {
     display: flex;
+    margin: auto;
+}
+.nav-item {
+    font-size: 15px;
+    line-height: 1;
+    
+}
+.nav-link {
+    color: #1c1c1c;
+}
+.nav-link:hover {
+    color: #3172b9;
 }
 .nav-item:not(:last-child) {
     margin-right: 50px;
 }
 .header-btn {
-    margin-left: 80px;
+    margin-left: 40px;
     
 }
 /*Hero*/
+.section-hero {
+    background-image: url(/img/hero\ bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    }
 .text-center {
     text-align: center;
 }
@@ -75,13 +96,44 @@ html {
     max-width: 50%;
 }
 .section-hero-heading {
-    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 30px;
+    
 }
 .section-decription {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
+    font-size: 16px;
+    line-height: 25px;  
 }
 .section-hero-btn-decription {
     margin-top: 10px;
+    
+}
+.section-hero-action {
+    display: inline-block;
+}
+.section-hero-btn-decription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 11px;
+    line-height: 1;
+    color: #787878;
+    text-transform: uppercase;
+    text-align: center;
+}
+.section-hero-ssl-icon {
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    margin-right: 5px;
+    background-size: contain;
+    background: url(/img/ssl\ icon.svg) center center;
+    background-repeat: no-repeat;
 }
 /*Section Do*/
 .section-do {
@@ -103,4 +155,86 @@ html {
 
 .section-do-item:not(:last-child) {
  margin-right: 30px;
+}
+
+/*Clients*/
+
+.section-clients {
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+.section-clients-list {
+    display: flex;
+}
+.section-clients-item {
+    flex: 1 1 33.33%;
+}
+.section-clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+.section-clients-user {
+    display: flex;
+    align-items: center;
+}
+.section-clients-avatar {
+    border: 2px solid #3172b9;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.section-contacts {
+    padding-top: 85px;
+    padding-bottom: 95px;
+}
+.section-contacts-list {
+    display: flex;
+    margin-top: 43px;
+}
+.section-contacts-item {
+    flex: 1 1 33.33%;
+}
+.section-contacts-info {
+    max-width: 250px;
+}
+.section-contacts-icon {
+    display: block;
+    margin-bottom: 25px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: auto 100%;
+    background-color: transparent;
+}
+.section-contacts-icon-gps {
+    background-image: url(/img/icons8-gps-50.png)
+}
+.section-contacts-icon-phone {
+    background-image: url(/img/icons8-телефон-50.png)
+}
+.section-contacts-icon-mail {
+    background-image: url(/img/icons8-почта-50.png)
+}
+.section-contacts-heading {
+    display: block;
+    margin-bottom: 40px;
+}
+.footer {
+    height: 125px;
+}
+.footer-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+.footer-nav-list {
+    display: flex;
+    align-items: center;
+    
+}
+.footer-nav-item:not(:last-child) {
+    margin-right: 35px;
 }
